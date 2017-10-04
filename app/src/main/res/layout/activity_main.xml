@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:text="Guess the Number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="75dp"
+        android:textColor="@color/textColor"
+        android:id="@+id/titleBox"
+        />
+
+    <EditText
+        android:id="@+id/uGuess"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Guess"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textSize="26dp"
+        android:textColor="@color/textColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/userGuessBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@color/primaryColor"
+            android:onClick="userGuessBtn"
+            android:text="Guess"
+            android:textColor="@color/textColor"
+            android:textSize="26dp" />
+
+        <Button
+            android:id="@+id/userRestBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:onClick="resetBtn"
+            android:text="Reset"
+            android:textColor="@color/textColor"
+            android:textSize="26dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/emoticon"
+        android:layout_gravity="center|bottom"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:onClick="showMeTheDialog"
+        android:text="@string/btn_label"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center|bottom"/>
+
+</LinearLayout>
